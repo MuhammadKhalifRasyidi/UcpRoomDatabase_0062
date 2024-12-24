@@ -8,14 +8,13 @@ class LocalRepositoryBrg(
     private val barangDao: BarangDao
 ) : RepositoryBrg {
     override suspend fun insertBrg(barang: Barang) {
-        BarangDao.insertBarang(barang)
+
+        barangDao.insertBarang(barang)
     }
 
     override fun getAllBrg(): Flow<List<Barang>> = barangDao.getAllBarang()
 
-
     override fun getBrg(id: String): Flow<Barang> = barangDao.getBarang(id)
-
 
     override suspend fun deleteBrg(barang: Barang) {
         barangDao.deleteBarang(barang)
