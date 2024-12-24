@@ -8,5 +8,5 @@ interface RepositorySpr {
 
     fun getAllSpr(): Flow<List<Suplier>>
 
-    fun getSpr(id: String): Flow<Suplier>
+    fun getSpr(ids: String): Flow<Suplier>
 }
