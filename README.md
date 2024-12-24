@@ -1,12 +1,19 @@
 homepage 
-![home](https://github.com/user-attachments/assets/3e656cf6-1704-4f4d-abc7-d043b402b420)
+![home](https://github.com/user-attachments/assets/70ecf670-246e-49cb-b8b3-48de77c64364)
 insert suplier, dan list suplier
-![insert-suplier](https://github.com/user-attachments/assets/8d2dbd7f-20e3-46ce-845f-2f19bdd5051d) ![list-suplier](https://github.com/user-attachments/assets/5ff10a47-5ea3-4486-b566-cdfa9d24e546)
+![insert-suplier](https://github.com/user-attachments/assets/e1ac9969-6d16-4fe7-8387-b65e9511a723)
+![list-suplier](https://github.com/user-attachments/assets/4fe7252c-6810-42ee-913d-374b39270c4e)
 insert produk, list produk, dan detail produk 
-![insert-produk](https://github.com/user-attachments/assets/6d9de267-a476-4152-b0c9-13d913329362) ![list-produk](https://github.com/user-attachments/assets/ea4a060f-c095-4223-acc9-fa964181d778) ![detail-produk](https://github.com/user-attachments/assets/823a4e12-3983-4ee2-9a6a-49cf88f16381)
+![insert-produk](https://github.com/user-attachments/assets/b3f25d12-dbd7-482d-9e58-1aa7522c2577)
+![list-produk](https://github.com/user-attachments/assets/2e476eef-96c4-47be-9830-94466d14cb78)
+![detail-produk](https://github.com/user-attachments/assets/efe24e58-b917-4a85-9bab-46612ab808c2)
 update produk, detail update, dan list after update 
-![update-produk](https://github.com/user-attachments/assets/77a106a6-306d-4f18-a43e-a35a5f6ce28c) ![detail-aft-update](https://github.com/user-attachments/assets/6ed01b22-4bfe-4515-a526-371a3c2f27a4) ![list-aft-update](https://github.com/user-attachments/assets/2839f107-a5d0-4e0b-b88a-5187d8ba4824)
+![update-produk](https://github.com/user-attachments/assets/6e2da5d7-4277-42f2-80d5-302f713609ff)
+![detail-aft-update](https://github.com/user-attachments/assets/83b5f078-be01-40b0-b2ca-1c4ea4d0c53d)
+![list-aft-update](https://github.com/user-attachments/assets/7aa5488d-0065-4c0b-a2fd-6b62c7fc73e1)
 delete produk, dan list after delete 
-![delete-produk](https://github.com/user-attachments/assets/6fe3d951-85b5-41af-aa36-63623d5372d9) ![list-aft-delete](https://github.com/user-attachments/assets/fc2cd453-2339-4637-8bde-630481f8b721)
+![delete-produk](https://github.com/user-attachments/assets/ef39a2bb-adc5-41b8-942f-7fa8bbb28cbd)
+![list-aft-delete](https://github.com/user-attachments/assets/adc1b127-c53a-4802-aa19-aebf94cb0b20)
 database produk, dan database suplier 
-![database-produk](https://github.com/user-attachments/assets/5240dc14-0fb8-4a66-9287-d97cd8256e34) ![database-suplier](https://github.com/user-attachments/assets/bf95ea12-6984-4957-a65c-6002c07308ef)
+![database-produk](https://github.com/user-attachments/assets/8b40def8-1030-4d64-8ee9-63e0847335ae)
+![database-suplier](https://github.com/user-attachments/assets/0ad411ba-f6e2-4acf-9ae5-ba3061b5c90e)
