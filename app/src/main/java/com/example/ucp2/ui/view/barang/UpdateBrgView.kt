@@ -17,6 +17,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.ucp2.ui.viewmodel.PenyediaViewModel
 import com.example.ucp2.ui.viewmodel.barang.UpdateBrgViewModel
 import kotlinx.coroutines.Dispatchers
+import com.example.ucp2.ui.customwidget.TopAppBar
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -50,7 +51,7 @@ fun UpdateBrgView(
         snackbarHost = { SnackbarHost(hostState = snackbarHostState) }, //tempatkan snackbar di scaffold
         topBar = {
             TopAppBar(
-                judul = "Edit Barang",
+                judul = "Edit Produk",
                 showBackButton = true,
                 onBack = onBack,
             )

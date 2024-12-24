@@ -55,8 +55,8 @@ fun HomeSprView(
     Scaffold (
         topBar = {
             TopAppBar(
-                judul = "Daftar Suplier",
-                showBackButton = false,
+                judul = "List Suplier",
+                showBackButton = true,
                 onBack = onBack,
             )
         },

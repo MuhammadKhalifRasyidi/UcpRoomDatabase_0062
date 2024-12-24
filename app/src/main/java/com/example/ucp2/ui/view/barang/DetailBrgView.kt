@@ -50,7 +50,7 @@ fun DetailBrgView(
     Scaffold (
         topBar = {
             TopAppBar(
-                judul = "Detail Barang",
+                judul = "Detail Produk",
                 showBackButton = true,
                 onBack = onBack,
             )
@@ -156,7 +156,8 @@ fun ItemDetailBrg(
 ) {
     Card (
         modifier = modifier
-            .fillMaxWidth(),
+            .fillMaxWidth()
+            .padding(55.dp),
         colors = CardDefaults.cardColors(
             containerColor =  MaterialTheme.colorScheme.primaryContainer,
             contentColor = MaterialTheme.colorScheme.onPrimaryContainer

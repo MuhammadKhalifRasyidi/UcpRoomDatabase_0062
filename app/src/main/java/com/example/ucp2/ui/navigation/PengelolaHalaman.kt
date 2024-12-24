@@ -96,7 +96,7 @@ fun PengelolaHalaman(
             }, onBack = {
                 navController.popBackStack()
             }, onAddBrg = {
-                navController.navigate(DestinasiInsertBrg.route)
+                navController.navigate(DestinasiUpdate.route)
             }, Modifier = Modifier
             )
         }

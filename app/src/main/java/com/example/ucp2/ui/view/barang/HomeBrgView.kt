@@ -15,6 +15,7 @@ import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
@@ -31,11 +32,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.ucp2.data.entity.Barang
+import com.example.ucp2.ui.customwidget.TopAppBar
 import com.example.ucp2.ui.viewmodel.PenyediaViewModel
 import com.example.ucp2.ui.viewmodel.barang.HomeBrgUiState
 import com.example.ucp2.ui.viewmodel.barang.HomeBrgViewModel
@@ -52,8 +55,8 @@ fun HomeBrgView(
     Scaffold (
         topBar = {
             TopAppBar(
-                judul = "Daftar Produk",
-                showBackButton = false,
+                judul = "List Produk",
+                showBackButton = true,
                 onBack = onBack,
             )
         },
@@ -65,7 +68,7 @@ fun HomeBrgView(
             ) {
                 Icon(
                     imageVector = Icons.Default.Add,
-                    contentDescription = "Tambah Produk"
+                    contentDescription = "Edit Produk"
                 )
             }
         }
@@ -170,11 +173,20 @@ fun CardBrg(
     modifier: Modifier = Modifier,
     onClick: () -> Unit = { }
 ) {
+    // Tentukan warna latar belakang berdasarkan stok
+    val backgroundColor = when {
+        brg.stok == 0 -> Color.Gray.copy(alpha = 0.2f) // abu-abu
+        brg.stok in 1..10 -> Color.Red.copy(alpha = 0.2f) // merah
+        else -> Color.Green.copy(alpha = 0.2f) // hijau
+
+    }
+
     Card(
         onClick = onClick,
         modifier = modifier
             .fillMaxWidth()
-            .padding(8.dp)
+            .padding(8.dp),
+        colors = CardDefaults.cardColors(containerColor = backgroundColor) // Set warna latar belakang
     ) {
         Column(
             modifier = Modifier.padding(8.dp)
