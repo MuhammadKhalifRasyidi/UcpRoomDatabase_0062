@@ -8,11 +8,10 @@ class LocalRepositorySpr(
     private val suplierDao: SuplierDao
 ) : RepositorySpr {
     override suspend fun insertSpr(suplier: Suplier) {
-        SuplierDao.insertSuplier(suplier)
+        suplierDao.insertSuplier(suplier)
     }
 
     override fun getAllSpr(): Flow<List<Suplier>> = suplierDao.getAllSuplier()
 
-
-    override fun getSpr(id: String): Flow<Suplier> = suplierDao.getSuplier(id)
+    override fun getSpr(ids: String): Flow<Suplier> = suplierDao.getSuplier(ids)
 }
